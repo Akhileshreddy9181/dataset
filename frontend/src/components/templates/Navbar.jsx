@@ -70,7 +70,7 @@ const Navbar = () => {
         <ul className={click ? "nav-options active" : "nav-options"}>
           {publisher && (
             <li className="option" onClick={closeMobileMenu}>
-              <h4 onClick={() => navigate(`/newdataset`}>NEW DATA SET</h4>
+              <h4 onClick={() => navigate(`/newdataset`)}>NEW DATA SET</h4>
             </li>
           )}
           {publisher && (
