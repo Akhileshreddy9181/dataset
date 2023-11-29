@@ -32,7 +32,7 @@ export default function AdminCard({ info }) {
 
   return (
     <div
-      className={admin-container ${approvalStatus === "approved" ? "approved" : approvalStatus === "rejected" ? "rejected" : ""}}
+      className={`admin-container ${approvalStatus === "approved" ? "approved" : approvalStatus === "rejected" ? "rejected" : ""}`}
 
       // className="admin-container"
       // onClick={(e) => {
