@@ -56,11 +56,11 @@ const Navbar = () => {
     <div className="header">
       <div className="logo-nav">
         <div className="logo-container">
-          <a onClick={() => navigate(`/`)}>
+          <a onClick={() => navigate(/)}>
             <IconButton>
               <Avatar
-                alt="IIITH"
-                src="https://d1hl0z0ja1o93t.cloudfront.net/wp-content/uploads/2017/04/21165916/logo2.png"
+                alt="Data_Foundation_Logo"
+                src="https://images.squarespace-cdn.com/content/v1/64e4e29725c04b3719d055ad/1692721851024-TQQ4RCABD66UNB4R5DW8/image-asset.png"
                 variant="square"
               />
             </IconButton>{" "}
@@ -70,17 +70,17 @@ const Navbar = () => {
         <ul className={click ? "nav-options active" : "nav-options"}>
           {publisher && (
             <li className="option" onClick={closeMobileMenu}>
-              <h4 onClick={() => navigate(`/newdataset`)}>NEW DATA SET</h4>
+              <h4 onClick={() => navigate(/newdataset)}>NEW DATA SET</h4>
             </li>
           )}
           {publisher && (
             <li className="option" onClick={closeMobileMenu}>
-              <h4 onClick={() => navigate(`/mydatasets`)}>MY DATA SETS</h4>
+              <h4 onClick={() => navigate(/mydatasets)}>MY DATA SETS</h4>
             </li>
           )}
           {publisher && (
             <li className="option" onClick={closeMobileMenu}>
-              <h4 onClick={() => navigate(`/mypendingdatasets`)}>
+              <h4 onClick={() => navigate(/mypendingdatasets)}>
                 PENDING DATASETS
               </h4>
             </li>

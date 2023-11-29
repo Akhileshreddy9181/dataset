@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../templates/Card";
 import Navbar from "../templates/Navbar";
+import { Avatar } from "@mui/material";
 
 export default function Datasetsdisplayhome() {
   let navigate = useNavigate();
@@ -48,14 +49,22 @@ export default function Datasetsdisplayhome() {
       <div className="myDatasets-heading" style={{ marginTop: "10vh" }}>
         <h2 style={{ fontSize: "xx-large" }}>DATA FOUNDATION</h2>
       </div>
-
+      <div style={{ display: "flex", justifyContent: "center"}}>
+        <img
+          alt="Data_Foundation_Logo"
+          src="https://images.squarespace-cdn.com/content/v1/64e4e29725c04b3719d055ad/1692721851024-TQQ4RCABD66UNB4R5DW8/image-asset.png"
+          variant="square"
+          height={"300px"}
+          width={"300px"}
+        />
+      </div>
       <div className="myDatasets-list">
         <Stack
           direction="row"
           spacing={2}
-          justifyContent="right"
+          justifyContent="center"
           alignItems="flex-end"
-          sx={{ margin: "10px" }}
+          sx={{ margin: "10px", marginTop: "30px" }}
         >
           <Button
             variant="contained"

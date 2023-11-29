@@ -17,7 +17,8 @@
     font-size: large;
     cursor: pointer;
 
-    
+    border: 2px solid transparent; /* Default border */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
 
 }
 
@@ -26,9 +27,9 @@
         width: 90%;
         font-size: x-small;
     }
-    
-        
-    
+
+
+
 }
 
 
@@ -46,8 +47,8 @@
     margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
-    
-    
+
+
 }
 h3,p{
     margin: 0;
@@ -63,8 +64,8 @@ h3,p{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
-    
+
+
 }
 
 .adm-btn button{
@@ -73,9 +74,9 @@ h3,p{
     border:none;
     transition:0.2s;
     margin-bottom: 0.5rem;
-    
-    
-    
+
+
+
 
 }
 
@@ -84,9 +85,43 @@ h3,p{
 }
 
 a{
-    
+
     color:#1E90FF;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Additional styles for the approval buttons (adjust as needed) */
+.approval-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .approve,
+  .reject {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .approve {
+    background-color: green;
+  }
+
+  .reject {
+    background-color: red;
+  }
+
+  /* Define the styles for the card outline when approved */
+.admin-container.approved {
+    border: 2px solid green; /* Green border */
+  }
+
+  /* Define the styles for the card outline when rejected */
+  .admin-container.rejected {
+    border: 2px solid red; /* Red border */
+  }
