@@ -74,7 +74,7 @@ export default function AdminCard({ info }) {
           className="viewmore"
           onClick={(e) => {
             e.stopPropagation();
-            let url = "/admincheck/" + info.id;
+            let url = "/check/" + info.id;
             navigate(url);
           }}
         >
