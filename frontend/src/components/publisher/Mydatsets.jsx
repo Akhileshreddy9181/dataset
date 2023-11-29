@@ -44,24 +44,24 @@ export default function Mydatasets() {
   useEffect(() => {
     //retreiving the data from the backend
 
-    // if (localStorage.getItem("user") !== null) {
-    //   axios
-    //     .get("api/datasets/", {
-    //       headers: {
-    //         Authorization:
-    //           "Token " + JSON.parse(localStorage.getItem("user")).token,
-    //       },
-    //     })
-    //     .then((res) => {
-    //       console.log("res", res);
-    //       setDatasets(res.data);
-    //     })
-    //     .catch((err) => {
-    //       console.log("err", err);
-    //     });
-    // } else {
-    //   navigate("/login");
-    // }
+    if (localStorage.getItem("user") !== null) {
+      axios
+        .get("api/datasets/", {
+          headers: {
+            Authorization:
+              "Token " + JSON.parse(localStorage.getItem("user")).token,
+          },
+        })
+        .then((res) => {
+          console.log("res", res);
+          setDatasets(res.data);
+        })
+        .catch((err) => {
+          console.log("err", err);
+        });
+    } else {
+      navigate("/login");
+    }
   }, []);
 
   return (
