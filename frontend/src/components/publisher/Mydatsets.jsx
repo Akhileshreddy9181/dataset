@@ -12,20 +12,7 @@ import "./index.css";
 
 export default function Mydatasets() {
   let navigate = useNavigate();
-  let [datasets, setDatasets] = useState([
-    [
-      {
-          "id": 2,
-          "name": "UNO Dataset",
-          "description": "Information about UNO",
-          "publisher": 1,
-          "source": "https://www.kaggle.com/datasets/avtnshm/united-nations-refugee-data-unhcr/",
-          "reference": "https://dataset-s3-bucket.s3.amazonaws.com/private/UNO_Dataset.txt?AWSAccessKeyId=AKIASZASMGKR2Z7CN35L&Signature=ThL6OOzHk5tR3Qz8JRM71ETTylc%3D&Expires=1701230931",
-          "status": "R",
-          "date": "2023-11-29T03:08:51.521176Z"
-      }
-  ]
-  ]);
+  let [datasets, setDatasets] = useState([]);
   //setting conditions based on user authentication==publisher
   useEffect(() => {
     if (localStorage.getItem("user")) {
